@@ -1,0 +1,9 @@
+.opening-section {
+  background-image: linear-gradient(
+      rgba(65, 85, 195, 0.7),
+      rgba(17, 18, 63, 0.7)
+    ),
+    url(../public/naira4dollar_images/background.jpeg);
+  background-size: cover;
+  height: 35rem;
+}
