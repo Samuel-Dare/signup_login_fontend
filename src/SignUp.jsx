@@ -133,6 +133,7 @@ class Signup extends Component {
           >
             <div className="alert alert-danger" role="alert">
             A simple danger alert—check it out!
+            console.log(GET_)
             </div>
             <div>
               <div>
