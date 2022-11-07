@@ -12,13 +12,10 @@ import "./Home.css";
 //   );
 // };
 
-class Signup extends Component {
+class Login extends Component {
   state = {
-    firstname: "",
-    lastname: "",
     email: "",
-    password: "",
-    reenterpassword: "",
+    password: ""
 
     // error: "",
   };
@@ -109,7 +106,7 @@ class Signup extends Component {
           <div className="col-6">
             {" "}
             <h1 style={this.styles} className="mt-5 mb-4">
-              Welcome to the Signup Page
+              Welcome to the Login Page
             </h1>
             <p style={this.style2}>
               We started this industry since the days of e-gold (Since 2006) and
@@ -131,37 +128,9 @@ class Signup extends Component {
             action="index.php"
             method="POST"
           >
-            <div className="alert alert-danger" role="alert">
-            A simple danger alert—check it out!
-            </div>
             <div>
               <div>
-                <div>
-                  <input
-                    onChange={this.handleChange}
-                    type="text"
-                    id="firstname"
-                    style={this.inputField}
-                    className="form-control"
-                    value={this.state.firstname}
-                    placeholder="First Name"
-                    // required={true}
-                    errorMessage="Firstname is required"
-                  />
-                </div>
-                <div>
-                  <input
-                    onChange={this.handleChange}
-                    type="text"
-                    id="lastname"
-                    style={this.inputField}
-                    className="form-control"
-                    value={this.state.lastname}
-                    placeholder="Last Name"
-                    // required={true}
-                    errorMessage="Lastname is required"
-                  />
-                </div>
+                
                 <div>
                   <input
                     onChange={this.handleChange}
@@ -188,19 +157,6 @@ class Signup extends Component {
                     // required={true}
                   />
                 </div>
-                <div>
-                  <input
-                    onChange={this.handleChange}
-                    type="password"
-                    id="reenterpassword"
-                    style={this.inputField}
-                    className="form-control"
-                    value={this.state.reenterpassword}
-                    placeholder="Re-enter Password"
-                    errorMessage="Passwords don't match"
-                    // required={true}
-                  />
-                </div>
               </div>
               <div>
                 <input
@@ -209,7 +165,7 @@ class Signup extends Component {
                   id="submit"
                   style={this.inputField}
                   className="form-control btn btn-secondary me-3"
-                  value="Sign up"
+                  value="Login"
                 />
                 <script>
                   {" "}
@@ -217,7 +173,7 @@ class Signup extends Component {
                 </script>
               </div>
               <div style={{ color: "azure" }}>
-                Already have an account{" "}
+                Don't have an account?{" "}
                 <button
                   style={{ borderBottom: "2px solid" }}
                   className="btn btn-secondary"
@@ -225,9 +181,9 @@ class Signup extends Component {
                   {" "}
                   <a
                     style={{ color: "azure", textDecoration: "none" }}
-                    href="./Login"
+                    href="./Signup"
                   >
-                    Login
+                    Sign up
                   </a>{" "}
                 </button>
               </div>
@@ -239,4 +195,4 @@ class Signup extends Component {
   }
 }
 
-export default Signup;
+export default Login;

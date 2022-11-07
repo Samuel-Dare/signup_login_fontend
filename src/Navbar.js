@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, Navlink } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -8,7 +9,9 @@ const Navbar = () => {
         // style={{ position: "fixed" }}
         className="navbar navbar-expand-lg navbar-light bg-light"
       >
+        <Link to="./">
         <img className="m-3" src="naira4dollar_images/background_image.png" />
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -26,12 +29,16 @@ const Navbar = () => {
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav ms-auto">
+            <Link to="./Login">
             <a className="nav-item nav-link btn btn-primary me-2 px-4" href="#">
-              Sign in
+              Login
             </a>
+            </Link>
+            <Link to="./Signup">
             <a className="nav-item nav-link btn btn-primary me-5 px-4" href="#">
               Sign up
             </a>
+            </Link>
           </div>
         </div>
       </nav>

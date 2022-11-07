@@ -48,7 +48,7 @@ class Home extends Component {
       formData.append("password", this.state.password);
       formData.append("reenterpassword", this.state.reenterpassword);
 
-      const url = "http://localhost/naira4dollar_database_backend/";
+      const url = "http://192.168.1.24/naira4dollar_database_backend/";
       axios
         .post(url, formData)
         .then((res) => console.log(res.data))
@@ -125,7 +125,7 @@ class Home extends Component {
               Naira4Dollar, RELIABLE ALWAYS!
             </p>
           </div>
-          <form
+          {/* <form
             style={this.formBody}
             className="col-4 py-4"
             action="index.php"
@@ -222,14 +222,14 @@ class Home extends Component {
                   {" "}
                   <a
                     style={{ color: "azure", textDecoration: "none" }}
-                    href="#"
+                    href="./Login"
                   >
-                    Sign in
+                    Login
                   </a>{" "}
                 </button>
               </div>
             </div>
-          </form>
+          </form> */}
         </div>
       </React.Fragment>
     );
